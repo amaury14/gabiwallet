@@ -1,0 +1,41 @@
+{
+    "docthis.returnsTag": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": false,
+    "editor.trimAutoWhitespace": true,
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+    "eslint.options": {
+        "extensions": [
+            ".ts",
+            ".html"
+        ],
+        "rules": {
+            // put rules here with the "off" value to diable autofixing those issues in VSCode when saving the file
+        }
+    },
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    "eslint.validate": [
+        "javascript",
+        "typescript",
+        "html"
+    ],
+    "files.insertFinalNewline": true,
+    "[html]": {
+        "editor.formatOnSave": false,
+        "editor.wordWrap": "on",
+        "editor.renderWhitespace": "all"
+    },
+    "html.format.wrapAttributes": "force-expand-multiline",
+    "prettier.trailingComma": "none",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescriptHero.imports.multiLineWrapThreshold": 115,
+    "typescriptHero.imports.organizeOnSave": true,
+    "typescriptHero.imports.stringQuoteStyle": "'",
+    "typescriptHero.imports.multiLineTrailingComma": false
+}

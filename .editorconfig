@@ -8,9 +8,22 @@ indent_size = 4
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.ts]
-quote_type = single
-
 [*.md]
 max_line_length = off
 trim_trailing_whitespace = false
+
+# Indentation override for all JS under lib directory
+[dist/**.js]
+indent_size = 2
+
+# Indentation override for package.json
+[package.json]
+indent_size = 2
+
+# Indentation override for package-lock.json
+[package-lock.json]
+indent_size = 2
+
+# Indentation override for tsconfig.json
+[tsconfig.json]
+indent_size = 2

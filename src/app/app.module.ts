@@ -3,6 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GWalletStateHandler } from './state/api/index';
+import { GWalletStateModule } from './state/state.gwallet.module';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GWalletModule } from './gwallet/gwallet.module';
 
 @NgModule({
   declarations: [
@@ -10,9 +16,15 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    GWalletStateModule,
+    HttpClientModule,
+    GWalletModule
   ],
-  providers: [],
+  providers: [GWalletStateHandler],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
