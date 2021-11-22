@@ -1,4 +1,5 @@
 # Gabiwallet
+### Author: Amaury Chong Rodríguez
 
 ## Project to create, read and send assets between wallets, using the GabiChain endpoint.
     Using Angular 11 and NgRx.
